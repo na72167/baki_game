@@ -22,13 +22,24 @@
                 <p class="panel-text">グラップラーを選択するのじゃッ!!</p>
                 <form class="character-select" method="post" action="">
                     <div class="character-wrap">
-                        <img class="character-panel" src="img/fighter01.png">
-                        <img class="character-panel" src="img/fighter02.png">
-                        <img class="character-panel" src="img/fighter03.png">
-                        <img class="character-panel" src="img/fighter04.png">
-                        <img class="character-panel" src="img/fighter05.png">
+                        <label class="character-panel">
+                            <img class="panel-img" src="img/fighter01.png">
+                            <input>
+                        </label>
+                        <label class="character-panel">
+                            <img class="panel-img" src="img/fighter02.png">
+                        </label>
+                        <label class="character-panel">
+                            <img class="panel-img" src="img/fighter03.png">
+                        </label>
+                        <label class="character-panel">
+                            <img class="panel-img" src="img/fighter04.png">
+                        </label>
+                        <label class="character-panel">
+                            <img class="panel-img" src="img/fighter05.png">
+                        </label>
                     </div>
-                    <input class="btn btn-start btn-inactive" type="submit" name="start" value="選べッ!!">
+                    <input class="btn btn-start btn-inactive" type="submit" name="start" value="選べッ!!" disabled=disabled>
                 </form>
             </section>
     </div>
