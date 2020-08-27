@@ -1,5 +1,8 @@
 body{
-    margin: 0;
+    margin:0;
+    background-color: black;
+    font-family: "Noto Serif SC", serif;
+    color: white;
 }
 
 //変数関係
@@ -40,102 +43,125 @@ $breakpoints: (
 }
 
 
-// ヘッダー関係
-header{
-    height: 80px;
-    width: $site-width;
-    background-color: red;
+/* ヘッダーのタイトルロゴのサイズ関係 */
+.header-logo-img{
+    box-sizing: border-box;
+    height: 150px;
+    width: auto;
+    position: relative;
+    left: 300px;
+}
+.header-logo-title{
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: white;
+}
+
+/* コンテンツ全体の共通スタイル */
+.content-wrap{
+    box-sizing: border-box;
+    background-color: #333;
+    max-width: 800px;
+    height: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
-// メインコンテンツ
-main{
-    height: 840px;
-    width: $site-width;
-    margin-left: auto;
-    margin-right: auto;
+/* ホームのヘッダースタイル */
+.index-header{
+    /* box-sizing: border-box あとからmargin.padding等を使った際も最初に設定されたpx内で追加される */
+    box-sizing: border-box;
+    height: 190px;
+    width: 800px;
+    margin-bottom: 10px;
 }
 
-// メイン画面
-.main-screen{
-    height: 450px;
-    background-color: blue;
-    width: $site-width;
+.index-main{
+    height: 29%;
+    width: auto;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.index-message{
+    color:#CC3535;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.main-logo-img{
+    height: 100%;
+    width: 100%;
+}
+
+/* 選択関係のスタイル */
+.selection{
+    text-align: center;
+}
+
+.panel-title{
+    font-size: 24px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.panel-text{
+    margin-bottom: 15px;
+}
+
+.character-select{
+    height: 225px;
+}
+
+.character-wrap{
+    height: 300px;
     overflow: hidden;
 }
 
-//味方側画面
-.ally-wrap{
-    width: 100px;
+.character-panel{
+    height: 100%;
+    width: 20%;
+    object-fit: cover;
+    float: left;
+    transition: .1s;
+    cursor: pointer;
 }
 
-.ally-panel{
-    height: 100px;
-    width: 100px;
+.character-panel:hover{
+    cursor: pointer;
+    background: red;
+    transition: .1s;
+  }
+
+.panel-img{
+    width: 100%;
+    height: 100%;
 }
 
-//操作パネル
-.operation{
-    height: 280px;
-    background-color: green;
-    width: $site-width;
-        & .figure-wrap{
-            position: relative;
-            top:20px;
-            float: left;
-            & .figure-panel{
-                //キャラクターの操作画面
-                height: 100%;
-                margin-left: 10px;
-            }
-        }
-    & .summon-bar{
-        position: absolute;
-        left: 450px;
-        width:300px;
-        & .summon-panel{
-            position: absolute;
-            &.summon-1{
-                left: 10px;
-                z-index: 6;
-            }
-            &.summon-2{
-                left: 20px;
-                z-index: 5;
-            }
-            &.summon-3{
-                left: 30px;
-                z-index: 4;
-            }
-            &.summon-4{
-                left: 40px;
-                z-index: 3;
-            }
-            &.summon-5{
-                left: 50px;
-                z-index: 2;
-            }
-            &.summon-6{
-                left: 60px;
-                z-index: 1;
-            }
-        }
-    }
+/* ボタン関係のスタイル */
+.btn{
+    font-size: 24px;
+    border: 2px solid #E4E4E4;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color:white;
 }
 
-//貢献度
-.contribution{
-    height: 110px;
-    background-color: yellow;
-    width: $site-width;
+.btn-inactive{
+    background: radial-gradient(#DBD7D7, #717171);
 }
 
-//フッター関係
-footer{
-    height: 80px;
-    width: $site-width;
-    background-color: black;
-    margin-left: auto;
-    margin-right: auto;
+.footer-link{
+    text-align: center;
+}
+
+.tv-link{
+    color: red;
 }
