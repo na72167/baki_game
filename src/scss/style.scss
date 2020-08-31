@@ -1,0 +1,170 @@
+@import "1_layout/*";
+//BEMへ書き換える
+
+body{
+    margin:0;
+    background-color: black;
+    font-family: "Noto Serif SC", serif;
+    color: white;
+}
+
+//変数関係
+$font-color_default: #777;
+$font-color_date: #e37b89;
+$color_corp: #e3a8b1;
+$font-color_sub1: #b6a489;
+
+$site-width: 620px;
+
+$font-size_s: 12px;
+$font-size_m: 14px;
+$font-size_default: 16px;
+$font-size_l: 18px;
+$font-size_xl: 24px;
+$font-size_xxl: 30px;
+$font-size_3l: 38px;
+
+$space_s: 5px;
+$space_m: 10px;
+$space_l: 15px;
+$space_xl: 20px;
+$space_xxl: 30px;
+$space_3l: 40px;
+
+// マップ型変数を使うと便利
+$breakpoints: (
+  'sm': 'screen and (max-width: 414px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 1000px)',
+  'xl': 'screen and (max-width: 1200px)',
+) !default;
+
+@mixin mq($breakpoint: sm) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+
+/* ヘッダーのタイトルロゴのサイズ関係 */
+.header-logo-img{
+    box-sizing: border-box;
+    height: 150px;
+    width: auto;
+    position: relative;
+    left: 300px;
+}
+.header-logo-title{
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: white;
+}
+
+/* コンテンツ全体の共通スタイル */
+.content-wrap{
+    box-sizing: border-box;
+    background-color: #333;
+    max-width: 800px;
+    height: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ホームのヘッダースタイル */
+.index-header{
+    /* box-sizing: border-box あとからmargin.padding等を使った際も最初に設定されたpx内で追加される */
+    box-sizing: border-box;
+    height: 190px;
+    width: 800px;
+    margin-bottom: 10px;
+}
+
+.index-main{
+    height: 29%;
+    width: auto;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.index-message{
+    color:#CC3535;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.main-logo-img{
+    height: 100%;
+    width: 100%;
+}
+
+/* 選択関係のスタイル */
+.selection{
+    text-align: center;
+}
+
+.panel-title{
+    font-size: 24px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.panel-text{
+    margin-bottom: 15px;
+}
+
+.character-select{
+    height: 225px;
+}
+
+.character-wrap{
+    height: 300px;
+    overflow: hidden;
+}
+
+.character-panel{
+    height: 100%;
+    width: 20%;
+    object-fit: cover;
+    float: left;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.character-panel:hover{
+    cursor: pointer;
+    background: red;
+    transition: .1s;
+  }
+
+.panel-img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ボタン関係のスタイル */
+.btn{
+    font-size: 24px;
+    border: 2px solid #E4E4E4;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color:white;
+}
+
+.btn-inactive{
+    background: radial-gradient(#DBD7D7, #717171);
+}
+
+.footer-link{
+    text-align: center;
+}
+
+.tv-link{
+    color: red;
+}
