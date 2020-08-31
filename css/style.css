@@ -1,4 +1,7 @@
 @charset "UTF-8";
+h1 {
+  margin: 10px; }
+
 body {
   margin: 0;
   background-color: black;
