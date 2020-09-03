@@ -1,0 +1,19 @@
+.header{
+    max-width: 780px;
+    &__wrap{
+        width:500px;
+        margin-right: auto;
+        margin-left: auto;
+        &-title{
+            height: 150px;
+            width:auto;
+            margin-right: 140px;
+            margin-left: 140px;
+        }
+        &-subtitle{
+            font-size: 36px;
+            text-align: center;
+            color: white;
+        }
+    }
+}
