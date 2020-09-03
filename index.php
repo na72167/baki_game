@@ -8,46 +8,20 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="content-wrap">
-        <header class="index-header">
-            <img class="header-logo-img" src="img/logo.png">
-            <h1 class="header-logo-title"">地下格闘技戦士VS最強死刑囚</h1>
+    <div id="main-wrap">
+        <header class="header">
+            <aside class="header__wrap">
+                <img class="header__wrap-title" src="img/logo.png" alt="刃牙ロゴ">
+                <h1 class="header__wrap-subtitle">地下格闘技戦士VS最強死刑囚</h1>
+            </aside>
         </header>
-        <main class="index-main">
-            <h1 class="index-message">「敗北を知りたい」</h1>
-            <img class="main-logo-img" src="img/shikeishu.jpg">
+        <main class="content">
+            メインコンテンツ
         </main>
-            <section class="selection">
-                <h1 class="panel-title">東京にどえらい連中が上陸するッ!!</h1>
-                <p class="panel-text">グラップラーを選択するのじゃッ!!</p>
-                <form class="character-select" method="post" action="">
-                    <div class="character-wrap">
-                        <label class="character-panel">
-                            <img class="panel-img" src="img/fighter01.png">
-                            <input>
-                        </label>
-                        <label class="character-panel">
-                            <img class="panel-img" src="img/fighter02.png">
-                        </label>
-                        <label class="character-panel">
-                            <img class="panel-img" src="img/fighter03.png">
-                        </label>
-                        <label class="character-panel">
-                            <img class="panel-img" src="img/fighter04.png">
-                        </label>
-                        <label class="character-panel">
-                            <img class="panel-img" src="img/fighter05.png">
-                        </label>
-                    </div>
-                    <input class="btn btn-start btn-inactive" type="submit" name="start" value="選べッ!!" disabled=disabled>
-                </form>
-            </section>
+        <footer class="footer">
+            フッター
+        </footer>
     </div>
-    <footer class="footer-link">
-        <p class="tv-link">TVアニメ「バキ」公式サイトへッ!!</p>
-        <p>このゲームは「バキ」のファンサイトです。</p>
-        公式とは一切関係ありません。
-    </footer>
     <!-- jqueryの読み込み(scr以降の物はおまじないと思っておいて良いかも) -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>

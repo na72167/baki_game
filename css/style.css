@@ -1,114 +1,77 @@
-@charset "UTF-8";
-h1 {
-  margin: 10px; }
-
 body {
   margin: 0;
-  background-color: black;
-  font-family: "Noto Serif SC", serif;
-  color: white; }
+  background-color: black; }
 
-/* ヘッダーのタイトルロゴのサイズ関係 */
-.header-logo-img {
-  box-sizing: border-box;
-  height: 150px;
-  width: auto;
-  position: relative;
-  left: 300px; }
-
-.header-logo-title {
-  box-sizing: border-box;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 800;
-  color: white; }
-
-/* コンテンツ全体の共通スタイル */
-.content-wrap {
-  box-sizing: border-box;
+#main-wrap {
   background-color: #333;
-  max-width: 800px;
   height: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
+  max-width: 800px; }
 
-/* ホームのヘッダースタイル */
-.index-header {
-  /* box-sizing: border-box あとからmargin.padding等を使った際も最初に設定されたpx内で追加される */
-  box-sizing: border-box;
-  height: 190px;
-  width: 800px;
-  margin-bottom: 10px; }
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-.index-main {
-  height: 29%;
-  width: auto;
-  position: relative;
-  margin-bottom: 20px; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-.index-message {
-  color: #CC3535;
-  text-align: center;
-  position: absolute;
-  top: 45%;
-  left: 35%;
-  font-size: 36px;
-  font-weight: 800; }
+body {
+  line-height: 1; }
 
-.main-logo-img {
-  height: 100%;
-  width: 100%; }
+ol, ul {
+  list-style: none; }
 
-/* 選択関係のスタイル */
-.selection {
-  text-align: center; }
+blockquote, q {
+  quotes: none; }
 
-.panel-title {
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 900;
-  margin-bottom: 20px; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
 
-.panel-text {
-  margin-bottom: 15px; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
-.character-select {
-  height: 225px; }
+.content {
+  max-width: 780px; }
 
-.character-wrap {
-  height: 300px;
-  overflow: hidden; }
+.footer {
+  max-width: 780px; }
 
-.character-panel {
-  height: 100%;
-  width: 20%;
-  object-fit: cover;
-  float: left;
-  transition: .1s;
-  cursor: pointer; }
-
-.character-panel:hover {
-  cursor: pointer;
-  background: red;
-  transition: .1s; }
-
-.panel-img {
-  width: 100%;
-  height: 100%; }
-
-/* ボタン関係のスタイル */
-.btn {
-  font-size: 24px;
-  border: 2px solid #E4E4E4;
-  border-radius: 5px;
-  padding: 10px 20px;
-  color: white; }
-
-.btn-inactive {
-  background: radial-gradient(#DBD7D7, #717171); }
-
-.footer-link {
-  text-align: center; }
-
-.tv-link {
-  color: red; }
+.header {
+  max-width: 780px; }
+  .header__wrap {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto; }
+    .header__wrap-title {
+      height: 150px;
+      width: auto;
+      margin-right: 140px;
+      margin-left: 140px; }
+    .header__wrap-subtitle {
+      font-size: 36px;
+      text-align: center;
+      color: white; }
